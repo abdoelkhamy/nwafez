@@ -1,0 +1,132 @@
+:root {
+    --green-color: #1da599;
+    --yellow-color: #e58a00;
+}
+.navbar {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+}
+.navbar .navbar-nav li a {
+    font-weight: bold;
+}
+.landing {
+    min-height: 100vh;
+    background-image: url(../image/landing.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing .container .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+
+}
+.article {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.article .container  {
+    display: flex;
+    justify-content: space-between;
+}
+.article .box {
+    display: flex;
+    background-color: #ccc;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.article .image {
+    width: 50%;
+}
+.article .image img {
+    height: 250px;
+    border-radius: 15px;
+}
+.article .text {
+    padding: 10px;
+    padding-right: 20px;
+}
+.article .text h4 {
+    margin-bottom: 20px;
+}
+.article .text p{
+    font-size: 14px;
+}
+@media (max-width: 991px) {
+    .article .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+
+.discover {
+    height: 500px;
+    background-color: var(--green-color);
+}
+.discover .text {
+    color: white;
+    z-index: 2;
+    width: 300px;
+}
+.discover .text h1 {
+    font-size: 45px;
+    line-height: 1.6;
+}
+.discover .text span {
+    font-weight: bold;
+}
+.discover .text button {
+    color: var(--yellow-color);
+    font-size: 30px;
+    font-weight: bold;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+}
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about .box {
+    background-image: url(../image/landing.jpg);
+    height: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+}
+.about .box > p {
+    padding: 2px 8px;
+    background-color: #ccc;
+    width: fit-content;
+    border-radius: 10px;
+}
+.about .text {
+    position:absolute ;
+    bottom: 0;
+}
+
+.about .text button {
+    position: absolute;
+    left: 25px;
+    top: 10%;
+    width: fit-content;
+    background-color: #3f7fe0;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: none;
+    color: white;
+}
+.about .text h4 {
+    
+}
+.about .text p {
+    font-size: 14px;
+}
